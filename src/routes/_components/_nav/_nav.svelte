@@ -3,6 +3,16 @@
 
 </script>
 <style>
+    header {
+        position: fixed;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #F8F8F8;
+        z-index: 1;
+        box-shadow: 0 10px 20px -20px lightgray;
+    }
     nav {
         display: flex;
         justify-content: space-between;

@@ -1,0 +1,34 @@
+<script>
+    import { onMount } from 'svelte';
+    export let textSrc;
+    let content;
+
+    onMount(async () => {
+        const res = await fetch(textSrc);
+        content = await res.text();
+    });
+
+</script>
+
+<style>
+    .page-overview h3 {
+        display: flex;
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        font-family: 'Lato';
+        font-weight: 300;
+        font-size: 25px;
+    }
+    .page-overview{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<div class="page-overview">
+    <h3>{content}</h3>
+</div>

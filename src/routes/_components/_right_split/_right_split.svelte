@@ -1,7 +1,16 @@
 <script>
+    import { onMount } from 'svelte';
+
     export let title;
     export let textSrc;
     export let imgSrc;
+
+    let content;
+
+    onMount(async () => {
+        const res = await fetch(textSrc);
+        content = await res.text();
+    });    
 </script>
 
 <style>
@@ -13,7 +22,7 @@
         width: 100%;
     }
     .left {
-        width: 60%;
+        width: 50%;
         padding: 2em;
         padding-left: 14%;
         display: flex;
@@ -52,6 +61,11 @@
   }
     p {
         font-family: 'Lato';
+        font-weight: 300;
+        font-size: 20px;
+        text-align: justify;
+        word-wrap: break-word;
+        width: 100%;
     }
     h1 {
         font-family: 'Lato';
@@ -61,7 +75,7 @@
 <div class="rs-container">
     <div class="left">
         <h1>{title}</h1>
-        <p><embed src={textSrc}></p>
+        <p>{content}</p>
     </div>
     <div class="right">
         <div class="circle">
