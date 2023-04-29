@@ -9,7 +9,7 @@
         height: 95px;
     }
 </style>
-<div class="buffer"></div>
 <Nav/>
+<div class="buffer"></div>
 <slot />
 <Footer/>

@@ -42,7 +42,9 @@
         justify-content: center;
         align-items: center;
         border-radius: 50%;
-        box-shadow: 0 0 20px #FF7F50;
+        border: solid 0.05px grey;
+        box-shadow: 0 0 15px grey;
+        /*box-shadow: 0 0 20px #FF7F50;*/
         /*
         border-width: 6px;
         border-style: solid;
