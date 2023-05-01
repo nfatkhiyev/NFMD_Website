@@ -20,7 +20,7 @@
         justify-content: space-between;
         align-items: center;
         width: auto;
-        padding-left: 140;
+        padding-left: 10%;
         padding-right: 7%;
     }
     .left {
