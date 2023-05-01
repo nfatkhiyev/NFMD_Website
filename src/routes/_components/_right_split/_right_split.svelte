@@ -19,12 +19,13 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
+        width: auto;
+        padding-left: 140;
+        padding-right: 7%;
     }
     .left {
         width: 50%;
         padding: 2em;
-        padding-left: 14%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -35,7 +36,6 @@
         align-items: center;
         width: 40%;
         height: 30em;
-        margin-right: 7%;
     }
     .circle {
         display: flex;
@@ -51,7 +51,7 @@
         border-color: transparent;
         background: linear-gradient(#F8F8F8, #F8F8F8) padding-box, linear-gradient(45deg, #FF7F50, #F8F8F8) border-box;
         */
-        height: 90%;
+        max-height: 90%;
         position: relative;
         overflow: hidden;
         aspect-ratio: 1/1;

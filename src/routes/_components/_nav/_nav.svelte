@@ -10,7 +10,7 @@
         left: 0;
         width: 100%;
         background: #F8F8F8;
-        z-index: 1;
+        z-index: 999;
         box-shadow: 0 10px 20px -20px lightgray;
     }
     nav {

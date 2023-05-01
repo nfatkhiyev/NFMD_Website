@@ -17,15 +17,15 @@
     }
     .left {
         width: 50%;
+        height: 500px;
         display: flex;
         justify-content: center;
         align-items: center;
         overflow: hidden;
-        margin: 1.5em;
+        margin-left: 1.5em;
     }
     .left img {
-        height: 538px;
-        object-fit: cover;
+        width: 100%;
     }
     .right {
         width: 50%;
@@ -42,7 +42,7 @@
             <ContactForm />
         </div>
         <div class="left">
-            <img src="images/EXAMPLE - 2.jpeg">
+            <img src="images/EXAMPLE - 2.jpeg" alt="assorted catheter samples">
         </div>
     </div>
 </div>

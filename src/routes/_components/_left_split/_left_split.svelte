@@ -14,17 +14,18 @@
 </script>
 
 <style>
-    .rs-container {
+    .ls-container {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
+        width: auto;
+        padding-left: 7%;
+        padding-right: 10%;
     }
     .right {
         width: 50%;
         padding: 2em;
-        padding-right: 14%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -35,7 +36,6 @@
         align-items: center;
         width: 40%;
         height: 30em;
-        margin-left: 7%;
     }
     .circle {
         display: flex;
@@ -51,7 +51,7 @@
         border-color: transparent;
         background: linear-gradient(#F8F8F8, #F8F8F8) padding-box, linear-gradient(45deg, #FF7F50, #F8F8F8) border-box;
         */
-        height: 90%;
+        max-height: 90%;
         position: relative;
         overflow: hidden;
         aspect-ratio: 1/1;
@@ -74,7 +74,7 @@
     }
 </style>
 
-<div class="rs-container">
+<div class="ls-container">
     <div class="left">
         <div class="circle">
             <img src={imgSrc} alt="engineering">
