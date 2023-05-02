@@ -4,6 +4,7 @@
     export let title;
     export let textSrc;
     export let imgSrc;
+    export let imgAlt;
 
     let content;
 
@@ -81,7 +82,7 @@
     </div>
     <div class="right">
         <div class="circle">
-            <img src={imgSrc} alt="engineering">
+            <img src={imgSrc} alt={imgAlt}>
         </div>
     </div>
 </div>

@@ -4,6 +4,7 @@
     export let title;
     export let textSrc;
     export let imgSrc;
+    export let imgAlt;
 
     let content;
 
@@ -77,7 +78,7 @@
 <div class="ls-container">
     <div class="left">
         <div class="circle">
-            <img src={imgSrc} alt="engineering">
+            <img src={imgSrc} alt={imgAlt}>
         </div>
     </div>
     <div class="right">
