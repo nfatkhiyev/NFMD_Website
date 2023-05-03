@@ -10,7 +10,8 @@
 
 <div class="page-container">
     <Banner title={"Engineering Exellence"} />
-    <RightSplit title={'Proof of Concept'} textSrc={'page_content/services/rapid_prototyping.txt'} imgSrc={'images/EXAMPLE - 13.jpeg'} imgAlt={'Molded Silicone Suture Sleeve'}/>
-    <LeftSplit title={'Proof of Concept'} textSrc={'page_content/about/about_overview.txt'} imgSrc={'images/_MG_2784.jpeg'} imgAlt={'3D Printed Prototype'}/>
-    <RightSplit title={'Proof of Concept'} textSrc={'page_content/services/rapid_prototyping.txt'} imgSrc={'images/EXAMPLE - 4.jpeg'} imgAlt={'Telescopic Catheter with custom High Torque Transfer Tip'}/>
+    <RightSplit title={'Concept Generation'} textSrc={'page_content/services/concept_generation.txt'} imgSrc={'images/_MG_2784.jpeg'} imgAlt={'3D Printed Prototype'}/>
+    <LeftSplit title={'Design Development'} textSrc={'page_content/services/design_development.txt'} imgSrc={'images/EXAMPLE - 13.jpeg'} imgAlt={'Molded Silicone Suture Sleeve'}/>
+    <RightSplit title={'Process Development'} textSrc={'page_content/services/process_development.txt'} imgSrc={'images/EXAMPLE - 8.jpeg'} imgAlt={'Prototype Mold'}/>
+    <LeftSplit title={'Minimum Viable Product, (MVP)'} textSrc={'page_content/services/mvp.txt'} imgSrc={'images/EXAMPLE - 4.jpeg'} imgAlt={'Telescopic Catheter with custom High Torque Transfer Tip'}/>
 </div>

@@ -12,5 +12,6 @@
 <div class="page-container">
     <Banner title={"About"}/>
     <PageOverview textSrc={"page_content/about/about_overview.txt"} />
-    <LeftSplit title={"Nate Fatkhiyev"} textSrc={"page_content/about/about_overview.txt"} imgSrc={"favicon.png"} />
+    <LeftSplit title={"Nate Fatkhiyev"} textSrc={"page_content/about/nate_fatkhiyev_overview.txt"} imgSrc={"images/nate_headshot_orig.jpeg"} imgAlt={"Nate Fatkhiyev"} />
+    <!-- <LeftSplit title={"Doro Guizar"} textSrc={"page_content/about/about_overview.txt"} imgSrc={"favicon.png"} imgAlt={"Doro Guizar"} /> -->
 </div>

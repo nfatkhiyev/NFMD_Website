@@ -67,6 +67,7 @@
         font-weight: 300;
         font-size: 20px;
         text-align: justify;
+        white-space: pre-wrap;
         word-wrap: break-word;
         width: 100%;
     }

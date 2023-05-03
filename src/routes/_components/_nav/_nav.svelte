@@ -77,10 +77,11 @@
             <a href="/"><img src="/nav_logo.jpeg" alt="NF Manufacturing & Design"></a>
         </div>
         <div class="right">
+            <a class:active={$page.route.id === "/"} href="/">Home</a>
             <a class:active={$page.route.id === "/services"} href="/services">Services</a>
             <a class:active={$page.route.id === "/about"} href="/about">About</a>
             <a class:active={$page.route.id === "/contact"} href="/contact">Contact</a>
-            <a class="linkedin" target="_blank" href="https://www.linkedin.com/company/nf-maufacturing-design/"><img src="linkedin.png" alt=""></a>
+            <a class="linkedin" target="_blank" href="https://www.linkedin.com/company/nf-maufacturing-design/"><img src="linkedin.png" alt="linkedin icon"></a>
         </div>
     </nav>
 </header>
