@@ -69,7 +69,23 @@
     .linkedin img{
         width: 30px;
     }
-
+    .construction-banner{
+        display: flex;
+        float: left;
+        position: absolute;
+        top: 95px;
+        z-index: 2;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background: #FFDC91;
+    }
+    .construction-banner p {
+        margin: 1em;
+        font-family: 'Lato';
+        text-align: center;
+        color: Black;
+    }
 </style>
 <header>
     <nav>
@@ -80,8 +96,10 @@
             <a class:active={$page.route.id === "/"} href="/">Home</a>
             <a class:active={$page.route.id === "/services"} href="/services">Services</a>
             <a class:active={$page.route.id === "/about"} href="/about">About</a>
-            <a class:active={$page.route.id === "/contact"} href="/contact">Contact</a>
             <a class="linkedin" target="_blank" href="https://www.linkedin.com/company/nf-maufacturing-design/"><img src="linkedin.png" alt="linkedin icon"></a>
         </div>
     </nav>
 </header>
+<div class="construction-banner">
+    <p>Website under construction! Contact info in page footer.</p>
+</div>

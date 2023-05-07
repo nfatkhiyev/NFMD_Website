@@ -6,7 +6,7 @@
     .buffer {
         width: 100%;
         background: #F8F8F8;
-        height: 95px;
+        height: 146.5px;
     }
 </style>
 <Nav/>

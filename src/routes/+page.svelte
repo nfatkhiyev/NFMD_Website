@@ -24,7 +24,7 @@
         padding-right: 3em;
         float: left;
         position: absolute;
-        top: 9em;
+        top: 12em;
         left: 5em;
         width: 40%;
         height: 40%;
@@ -105,7 +105,6 @@
         <h2>A hands on approach to product development</h2>
         <div class="button-line">
             <a class="headline-button light-button" href="/services">LEARN MORE</a>
-            <a class="headline-button emph-button" href="/contact">GET IN TOUCH</a>
         </div>
     </div>
     <img src="images/_MG_2864.jpeg" alt="engineering work area">
