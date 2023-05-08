@@ -1,16 +1,20 @@
 <svelte:head>
     <title>NF Manufacturing & Design</title>
 </svelte:head>
+<script>
+    let innerWidth;
+</script>
 <style>
     .page-container {
         width: 100%;
-        height: auto;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
     }
     img {
+        flex: 1;
         max-width: 100%;
         position: relative;
-        width: auto;
-        height: auto;
         object-fit: cover;
     }
     .headline-container {
@@ -23,13 +27,13 @@
         padding-left: 3em;
         padding-right: 3em;
         position: absolute;
-        top: 13vw;
+        top: 10.5vw;
         left: 6vw;
         width: 40vw;
         height: 30vw;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
     }
     h1, h2, a {
         font-family: 'Lato';
@@ -97,14 +101,12 @@
     }
 
     @media screen and (max-width: 1375px) {
-        img {
-            height: 55.5vw;
-        }
         .headline-container{
             width: 55vw;
-            height: 45vw;
-            top: 10vw;
-            left: 20vw;
+            height: 50%;
+            top: 18%;
+            left: 50%;
+            transform: translateX(-50%);
         }
         h1 {
             font-size: 5vw;
@@ -116,8 +118,13 @@
             font-size: 2vw;
         }
     }
+    @media screen and (max-width: 760px) {
+        h1 { font-size: 6vw; }
+        h2 {font-size: 4vw; }
+        .headline-button { font-size: 3vw;}
+    }
 </style>
-
+<svelte:window bind:innerWidth/>
 <div class="page-container">
     <div class="headline-container">
         <h1>ITERATE FAST</h1>
@@ -128,5 +135,9 @@
             <a class="headline-button emph-button" href="/contact">GET IN TOUCH</a>
         </div>
     </div>
-    <img src="images/_MG_2864.jpeg" alt="engineering work area">
+    {#if innerWidth < 1375}
+        <img src="images/EXAMPLE - 2.jpeg" alt="assorted catheter samples">
+    {:else}
+        <img src="images/_MG_2864.jpeg" alt="engineering work area">
+    {/if}
 </div>
