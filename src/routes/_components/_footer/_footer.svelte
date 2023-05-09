@@ -48,7 +48,7 @@
         E-mail: quote@nfmanufacturing.com
     </p>
     <p>&copy; <em id="date">2023</em> &nbsp NF Manufacturing & Design, LLC</p>
-    {#if innerWidth >= 1215}
+    {#if innerWidth >= 1125}
     <p></p>
     {/if}
 </footer>

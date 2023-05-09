@@ -1,4 +1,5 @@
 <script>
+    import {page} from "$app/stores";
     import Nav from './_components/_nav/_nav.svelte';
     import Footer from './_components/_footer/_footer.svelte';
 </script>
@@ -11,8 +12,10 @@
     .full-page-container {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         min-height: 100%;
+    }
+    .absolute-position {
+        position: absolute;
     }
     @media screen and (max-width: 450px){
         .buffer {
@@ -21,8 +24,8 @@
     }
 </style>
 <Nav/>
-<div class="full-page-container">
-<div class="buffer"></div>
-<slot />
-<Footer/>
+<div class="full-page-container" class:absolute-position={$page.route.id != "/contact"}>
+    <div class="buffer"></div>
+    <slot />
+    <Footer/>
 </div>
