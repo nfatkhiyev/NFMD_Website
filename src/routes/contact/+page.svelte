@@ -77,8 +77,10 @@
         <div class="right">
             <ContactForm form={form} />
         </div>
-        <div class="left">
-            <img src="images/EXAMPLE - 2.jpeg" alt="assorted catheter and injection molding samples">
-        </div>
+        {#if innerWidth>1140}
+            <div class="left">
+                <img src="images/EXAMPLE - 2.jpeg" alt="assorted catheter and injection molding samples">
+            </div>
+        {/if}
     </div>
 </div>

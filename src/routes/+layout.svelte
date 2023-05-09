@@ -13,7 +13,6 @@
         flex-direction: column;
         justify-content: space-between;
         min-height: 100%;
-        position: absolute;
     }
     @media screen and (max-width: 450px){
         .buffer {

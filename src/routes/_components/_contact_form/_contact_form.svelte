@@ -30,7 +30,7 @@
         font-family: 'Lato';
         font-weight: 400;
         font-size: 20px;
-        margin-bottom: 0.7em
+        margin-bottom: 0.7em;
     }
     .form-checkbox-container .form-label {
         margin: 0.5em;
