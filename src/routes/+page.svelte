@@ -100,7 +100,7 @@
         border-color: black;
     }
 
-    @media screen and (max-width: 1375px) {
+    @media screen and (max-width: 1300px) {
         .headline-container{
             width: 55vw;
             height: 50%;
@@ -135,7 +135,7 @@
             <a class="headline-button emph-button" href="/contact">GET IN TOUCH</a>
         </div>
     </div>
-    {#if innerWidth < 1375}
+    {#if innerWidth < 1300}
         <img src="images/EXAMPLE - 2.jpeg" alt="assorted catheter samples">
     {:else}
         <img src="images/_MG_2864.jpeg" alt="engineering work area">
