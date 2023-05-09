@@ -7,6 +7,7 @@
     import ContactForm from "../_components/_contact_form/_contact_form.svelte";
     
     export let form;
+    export let innerWidth;
 </script>
 
 <style>
@@ -48,9 +49,24 @@
         text-align: center;
         margin: 0.75em;
     }
+    @media screen and (max-width: 1140px){
+        .right{
+            padding-left: 10%;
+            padding-right: 10%;
+            width: 90%
+        }
+        .left {
+            display: hidden;
+        }
+        .span-container{
+            flex-direction: column;
+        }
+    }
 </style>
 
-<div calss="page-container">
+<svelte:window bind:innerWidth/>
+
+<div class="page-container">
     <Banner title="Contact Us"/>
     {#if form?.success}
     <div class="form-message-banner">

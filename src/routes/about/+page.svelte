@@ -5,13 +5,22 @@
 <script>
     import Banner from "../_components/_banner/_banner.svelte";
     import LeftSplit from "../_components/_left_split/_left_split.svelte";
+    import MobileSplit from "../_components/_mobile_split/_mobile_split.svelte";
     import PageOverview from "../_components/_page_overview/_page_overview.svelte";
 
+    let innerWidth;
 </script>
+
+<svelte:window bind:innerWidth/>
 
 <div class="page-container">
     <Banner title={"About"}/>
     <PageOverview textSrc={"page_content/about/about_overview.txt"} />
-    <LeftSplit title={"Nate Fatkhiyev"} textSrc={"page_content/about/nate_fatkhiyev_overview.txt"} imgSrc={"images/nate_headshot_orig.jpeg"} imgAlt={"Nate Fatkhiyev"} />
-    <!-- <LeftSplit title={"Doro Guizar"} textSrc={"page_content/about/about_overview.txt"} imgSrc={"favicon.png"} imgAlt={"Doro Guizar"} /> -->
+    {#if innerWidth<1140}
+        <MobileSplit title={"Nate Fatkhiyev"} textSrc={"page_content/about/nate_fatkhiyev_overview.txt"} imgSrc={"images/nate_headshot_orig.jpeg"} imgAlt={"Nate Fatkhiyev"} />
+        <!-- <MobileSplit title={"Doro Guizar"} textSrc={"page_content/about/about_overview.txt"} imgSrc={"favicon.png"} imgAlt={"Doro Guizar"} /> -->
+    {:else}
+        <LeftSplit title={"Nate Fatkhiyev"} textSrc={"page_content/about/nate_fatkhiyev_overview.txt"} imgSrc={"images/nate_headshot_orig.jpeg"} imgAlt={"Nate Fatkhiyev"} />
+        <!-- <LeftSplit title={"Doro Guizar"} textSrc={"page_content/about/about_overview.txt"} imgSrc={"favicon.png"} imgAlt={"Doro Guizar"} /> -->
+    {/if}
 </div>

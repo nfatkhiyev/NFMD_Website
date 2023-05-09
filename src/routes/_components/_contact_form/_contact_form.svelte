@@ -71,6 +71,16 @@
         color: black;
         border: 1px solid black;
     }
+    @media screen and (max-width: 1140px) {
+        #contactSubmitButton {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .form-line-container {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
 </style>
 <form method="POST" action="?/submitContact">
     <div class="form-line-container">
