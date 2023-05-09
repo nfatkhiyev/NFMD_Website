@@ -1,6 +1,5 @@
 <script>
     import { onMount } from 'svelte';
-
     export let title;
     export let textSrc;
     export let imgSrc;
@@ -15,28 +14,26 @@
 </script>
 
 <style>
-    .ls-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: auto;
-        padding-left: 7%;
-        padding-right: 10%;
-    }
-    .right {
-        width: 50%;
-        padding: 2em;
+    .ms-container {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10%;
+        padding-right: 10%;
     }
-    .left {
+    .top {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 40%;
         height: 30em;
+    }
+    .bottom {
+        width: 100%;
+        padding: 2em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
     .circle {
         display: flex;
@@ -45,13 +42,6 @@
         border-radius: 50%;
         border: solid 0.05px grey;
         box-shadow: 0 0 15px grey;
-        /*box-shadow: 0 0 20px #FF7F50;*/
-        /*
-        border-width: 6px;
-        border-style: solid;
-        border-color: transparent;
-        background: linear-gradient(#F8F8F8, #F8F8F8) padding-box, linear-gradient(45deg, #FF7F50, #F8F8F8) border-box;
-        */
         max-height: 90%;
         position: relative;
         overflow: hidden;
@@ -60,8 +50,7 @@
     .circle img {
         width: 100%;
         height: 100%;
-        object-fit: cover; /* to fit the image inside the circle */
-  }
+    }
     p {
         font-family: 'Lato';
         font-weight: 300;
@@ -73,17 +62,26 @@
     }
     h1 {
         font-family: 'Lato';
+        margin-bottom: 1.5em;
+    }
+    @media screen and (max-width: 575px){
+        .top {
+            height: unset;
+            max-height: 30em;
+        }
     }
 </style>
 
-<div class="ls-container">
-    <div class="left">
+<div class="ms-container">
+    <div class="title">
+        <h1>{title}</h1>
+    </div>
+    <div class="top">
         <div class="circle">
             <img src={imgSrc} alt={imgAlt}>
         </div>
     </div>
-    <div class="right">
-        <h1>{title}</h1>
+    <div class="bottom">
         <p>{content}</p>
     </div>
 </div>
