@@ -5,7 +5,7 @@
 <script>
     import Banner from "../_components/_banner/_banner.svelte";
     import ContactForm from "../_components/_contact_form/_contact_form.svelte";
-    
+
     export let form;
     export let innerWidth;
 </script>
@@ -75,7 +75,7 @@
     {/if}
     <div class="span-container">
         <div class="right">
-            <ContactForm form={form} />
+            <ContactForm form={form}/>
         </div>
         {#if innerWidth>1140}
             <div class="left">

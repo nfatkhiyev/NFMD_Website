@@ -1,4 +1,6 @@
 <script>
+    export let SF_URI = 'https://api.staticforms.xyz/submit';
+    let SF_ACCESS_KEY = '272c24f4-1620-4245-9b1e-5adcb59b0391';
     export let form;
 </script>
 <style>
@@ -82,24 +84,29 @@
         }
     }
 </style>
-<form method="POST" action="?/submitContact">
+<form method="POST" action="{SF_URI}">
+    <input type="hidden" name="accessKey" value="{SF_ACCESS_KEY}">
+    <input type="hidden" name="replyTo" value="@">
+    
     <div class="form-line-container">
-        <label class="form-label" for="contactFormName">Name*:</label>
-        <input class="form-field-text" name="contactFormName" type="text" placeholder="Your Name" required>
+        <label class="form-label" for="name">Name*:</label>
+        <input class="form-field-text" name="name" type="text" placeholder="Your Name" required>
     </div>
     <div class="form-line-container">
-        <label class="form-label" for="contactFormEmail">E-mail*:</label>
-        <input class="form-field-text" name="contactFormEmail" type="text" placeholder="Email address" required>
+        <label class="form-label" for="email">E-mail*:</label>
+        <input class="form-field-text" name="email" type="text" placeholder="Email address" required>
     </div>
     <div class="form-line-container">
-        <label class="form-label" for="contactFormMessage">Message:</label>
-        <textarea class="form-field-textarea" placeholder="Enter your message here" name="contactFormMessage"></textarea>
+        <label class="form-label" for="message">Message:</label>
+        <textarea class="form-field-textarea" placeholder="Enter your message here" name="message"></textarea>
     </div>
     <div class="form-checkbox-container">
-        <input class="form-checkbox" type="checkbox" name="newsletter" checked>
-        <label class="form-label" for="newsletter">Subscribe to the newsletter?</label>
+        <input class="form-checkbox" type="checkbox" name="$newsletter" checked>
+        <label class="form-label" for="$newsletter">Subscribe to the newsletter?</label>
     </div>
     <div class="form-line-container">
         <input id="contactSubmitButton" type="submit" value="Send Message">
     </div>
+    <input type="text" name="honeypot" style="display: none;">
+    <input type="hidden" name="redirectTo" value="https://nfmanufacturing.com/contact">
 </form>
