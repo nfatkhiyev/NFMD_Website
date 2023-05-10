@@ -6,7 +6,6 @@
     onMount(async () => {
         const res = await fetch(textSrc);
         content = await res.text();
-        console.log(content);
     });
 
 </script>

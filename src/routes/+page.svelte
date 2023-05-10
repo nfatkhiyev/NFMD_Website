@@ -1,16 +1,20 @@
 <svelte:head>
     <title>NF Manufacturing & Design</title>
 </svelte:head>
+<script>
+    let innerWidth;
+</script>
 <style>
     .page-container {
         width: 100%;
-        height: auto;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
     }
-    .page-container img {
+    img {
+        flex: 1;
         max-width: 100%;
         position: relative;
-        width: auto;
-        height: auto;
         object-fit: cover;
     }
     .headline-container {
@@ -22,23 +26,21 @@
         padding: 2.0em;
         padding-left: 3em;
         padding-right: 3em;
-        float: left;
         position: absolute;
-        top: 9em;
-        left: 5em;
-        width: 40%;
-        height: 40%;
+        top: 10.5vw;
+        left: 6vw;
+        width: 40vw;
+        height: 30vw;
         display: flex;
         flex-direction: column;
-        align-items: left;
-        justify-content: center;
+        justify-content: space-evenly;
     }
     h1, h2, a {
         font-family: 'Lato';
     }
 
     h1 {
-        font-size: 2.75em;
+        font-size: 4.0vw;
         margin-block-start: 0.37em;
         margin-block-end: 0.37em;
     }
@@ -49,6 +51,7 @@
 
     h2 {
         font-weight: 300;
+        font-size: 2.2vw;
         width: 100%;
         text-align: center;
     }
@@ -61,7 +64,7 @@
 
     .headline-button {
         text-decoration: none;
-        font-size: 16px;
+        font-size: 1.2vw;
         font-weight: 400;
         border: 1px solid;
         box-shadow: 0 0 2px 2px lightgrey;
@@ -96,8 +99,32 @@
         color: black;
         border-color: black;
     }
-</style>
 
+    @media screen and (max-width: 1300px) {
+        .headline-container{
+            width: 55vw;
+            height: 50%;
+            top: 18%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        h1 {
+            font-size: 5vw;
+        }
+        h2 {
+            font-size: 3vw;
+        }
+        .headline-button {
+            font-size: 2vw;
+        }
+    }
+    @media screen and (max-width: 760px) {
+        h1 { font-size: 6vw; }
+        h2 {font-size: 4vw; }
+        .headline-button { font-size: 3vw;}
+    }
+</style>
+<svelte:window bind:innerWidth/>
 <div class="page-container">
     <div class="headline-container">
         <h1>ITERATE FAST</h1>
@@ -108,5 +135,9 @@
             <a class="headline-button emph-button" href="/contact">GET IN TOUCH</a>
         </div>
     </div>
-    <img src="images/_MG_2864.jpeg" alt="engineering work area">
+    {#if innerWidth < 1300}
+        <img src="images/EXAMPLE - 2.jpeg" alt="assorted catheter samples">
+    {:else}
+        <img src="images/_MG_2864.jpeg" alt="engineering work area">
+    {/if}
 </div>

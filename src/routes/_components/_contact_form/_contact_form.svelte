@@ -30,7 +30,7 @@
         font-family: 'Lato';
         font-weight: 400;
         font-size: 20px;
-        margin-bottom: 0.7em
+        margin-bottom: 0.7em;
     }
     .form-checkbox-container .form-label {
         margin: 0.5em;
@@ -70,6 +70,16 @@
         background-color: #F8F8F8;
         color: black;
         border: 1px solid black;
+    }
+    @media screen and (max-width: 1140px) {
+        #contactSubmitButton {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .form-line-container {
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 </style>
 <form method="POST" action="?/submitContact">
