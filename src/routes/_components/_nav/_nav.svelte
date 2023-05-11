@@ -154,7 +154,7 @@
             <a class="linkedin" target="_blank" href="https://www.linkedin.com/company/nf-maufacturing-design/" on:click="{() => clicked = !clicked}"><img src="linkedin.png" alt="linkedin icon"></a>
         </div>
     {/if}
-</header>
 <div class="construction-banner">
     <p>Website under construction! Contact info in page footer.</p>
 </div>
+</header>
