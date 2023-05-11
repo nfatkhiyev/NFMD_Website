@@ -51,8 +51,6 @@
     }
     @media screen and (max-width: 1140px){
         .right{
-            padding-left: 10%;
-            padding-right: 10%;
             width: 90%
         }
         .left {

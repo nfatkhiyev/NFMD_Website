@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 <script>
     export let SF_URI = 'https://api.staticforms.xyz/submit';
     let SF_ACCESS_KEY = '272c24f4-1620-4245-9b1e-5adcb59b0391';
     export let form;
 </script>
+=======
+>>>>>>> development
 <style>
     form {
         width: 100%;
