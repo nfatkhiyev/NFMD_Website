@@ -136,8 +136,8 @@
         </div>
     </div>
     {#if innerWidth < 1300}
-        <img src="images/EXAMPLE - 2.jpeg" alt="assorted catheter samples">
+        <img src="/images/EXAMPLE - 2.jpeg" alt="assorted catheter samples">
     {:else}
-        <img src="images/_MG_2864.jpeg" alt="engineering work area">
+        <img src="/images/_MG_2864.jpeg" alt="engineering work area">
     {/if}
 </div>

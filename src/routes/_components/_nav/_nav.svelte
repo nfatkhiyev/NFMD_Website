@@ -124,7 +124,7 @@
                 <a class:active={$page.route.id === "/services"} href="/services">Services</a>
                 <a class:active={$page.route.id === "/about"} href="/about">About</a>
                 <a class:active={$page.route.id === "/contact"} href="/contact">Contact</a>
-                <a class="linkedin" target="_blank" href="https://www.linkedin.com/company/nf-maufacturing-design/"><img src="linkedin.png" alt="linkedin icon"></a>
+                <a class="linkedin" target="_blank" href="https://www.linkedin.com/company/nf-maufacturing-design/"><img src="/linkedin.png" alt="linkedin icon"></a>
             {/if}
         </div>
     </nav>
@@ -134,7 +134,7 @@
             <a class:active={$page.route.id === "/services"} href="/services" on:click="{() => clicked = !clicked}">Services</a>
             <a class:active={$page.route.id === "/about"} href="/about" on:click="{() => clicked = !clicked}">About</a>
             <a class:active={$page.route.id === "/contact"} href="/contact" on:click="{() => clicked = !clicked}">Contact</a>
-            <a class="linkedin" target="_blank" href="https://www.linkedin.com/company/nf-maufacturing-design/" on:click="{() => clicked = !clicked}"><img src="linkedin.png" alt="linkedin icon"></a>
+            <a class="linkedin" target="_blank" href="https://www.linkedin.com/company/nf-maufacturing-design/" on:click="{() => clicked = !clicked}"><img src="/linkedin.png" alt="linkedin icon"></a>
         </div>
     {/if}
 </header>
