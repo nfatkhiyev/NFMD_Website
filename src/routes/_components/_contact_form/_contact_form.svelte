@@ -1,6 +1,3 @@
-<script>
-    export let form;
-</script>
 <style>
     form {
         width: 100%;

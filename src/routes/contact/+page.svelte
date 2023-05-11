@@ -51,8 +51,6 @@
     }
     @media screen and (max-width: 1140px){
         .right{
-            padding-left: 10%;
-            padding-right: 10%;
             width: 90%
         }
         .left {
@@ -79,7 +77,7 @@
         </div>
         {#if innerWidth>1140}
             <div class="left">
-                <img src="images/EXAMPLE - 2.jpeg" alt="assorted catheter and injection molding samples">
+                <img src="/images/EXAMPLE - 2.jpeg" alt="assorted catheter and injection molding samples">
             </div>
         {/if}
     </div>
