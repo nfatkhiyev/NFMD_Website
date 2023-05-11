@@ -11,7 +11,7 @@
     .banner {
         margin: 2.5em;
         margin-bottom: 3.0em;
-        margin-top: 3.5em;
+        margin-top: 5em;
     }
 </style>
 

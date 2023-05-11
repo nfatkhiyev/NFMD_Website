@@ -112,9 +112,6 @@
     .construction-banner{
         display: flex;
         float: left;
-        position: absolute;
-        top: 92.14px;
-        z-index: 2;
         width: 100%;
         justify-content: center;
         align-items: center;
