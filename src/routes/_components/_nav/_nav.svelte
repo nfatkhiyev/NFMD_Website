@@ -135,15 +135,9 @@
                 <MenuButton bind:clicked={clicked}/>
             {:else}
                 <a class:active={$page.route.id === "/"} href="/">Home</a>
-<<<<<<< HEAD
                 <a class:active={$page.route.id === "/services/"} href="/services/">Services</a>
                 <a class:active={$page.route.id === "/about/"} href="/about/">About</a>
                 <a class:active={$page.route.id === "/contact/"} href="/contact/">Contact</a>
-=======
-                <a class:active={$page.route.id === "/services"} href="/services">Services</a>
-                <a class:active={$page.route.id === "/about"} href="/about">About</a>
-                <a class:active={$page.route.id === "/contact"} href="/contact">Contact</a>
->>>>>>> development
                 <a class="linkedin" target="_blank" href="https://www.linkedin.com/company/nf-maufacturing-design/"><img src="/linkedin.png" alt="linkedin icon"></a>
             {/if}
         </div>

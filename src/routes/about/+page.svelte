@@ -19,8 +19,8 @@
     <PageOverview textSrc={"/page_content/about/about_overview.txt"} />
     <PageOverview textSrc={"/page_content/about/about_overview.txt"} />
     {#if innerWidth<1140}
-        <MobileSplit title={"Nate Fatkhiyev"} textSrc={"page_content/about/nate_fatkhiyev_overview.txt"} imgSrc={"/images/nate_headshot_orig.jpeg"} imgAlt={"Nate Fatkhiyev"} />
-        <MobileSplit title={"Doro Guizar"} textSrc={"page_content/about/about_overview.txt"} imgSrc={"/images/doro_guizar_headshot.jpeg"} imgAlt={"Doro Guizar"} />
+        <MobileSplit title={"Nate Fatkhiyev"} textSrc={"/page_content/about/nate_fatkhiyev_overview.txt"} imgSrc={"/images/nate_headshot_orig.jpeg"} imgAlt={"Nate Fatkhiyev"} />
+        <MobileSplit title={"Doro Guizar"} textSrc={"/page_content/about/about_overview.txt"} imgSrc={"/images/doro_guizar_headshot.jpeg"} imgAlt={"Doro Guizar"} />
     {:else}
         <RightSplit title={"Doro Guizar"} textSrc={"/page_content/about/doro_guizar_overview.txt"} imgSrc={"/images/doro_guizar_headshot.jpeg"} imgAlt={"Doro Guizar"} />
         <LeftSplit title={"Nate Fatkhiyev"} textSrc={"/page_content/about/nate_fatkhiyev_overview.txt"} imgSrc={"/images/nate_headshot_orig.jpeg"} imgAlt={"Nate Fatkhiyev"} />
