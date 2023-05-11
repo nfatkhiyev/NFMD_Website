@@ -131,8 +131,8 @@
         <h1>INNOVATE FAST</h1>
         <h2>A hands on approach to product development</h2>
         <div class="button-line">
-            <a class="headline-button light-button" href="/services">LEARN MORE</a>
-            <a class="headline-button emph-button" href="/contact">GET IN TOUCH</a>
+            <a class="headline-button light-button" href="/services/">LEARN MORE</a>
+            <a class="headline-button emph-button" href="/contact/">GET IN TOUCH</a>
         </div>
     </div>
     {#if innerWidth < 1300}

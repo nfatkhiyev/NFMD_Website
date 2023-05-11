@@ -79,7 +79,7 @@
         </div>
         {#if innerWidth>1140}
             <div class="left">
-                <img src="images/EXAMPLE - 2.jpeg" alt="assorted catheter and injection molding samples">
+                <img src="/images/EXAMPLE - 2.jpeg" alt="assorted catheter and injection molding samples">
             </div>
         {/if}
     </div>
