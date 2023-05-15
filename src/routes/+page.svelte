@@ -127,8 +127,8 @@
 <svelte:window bind:innerWidth/>
 <div class="page-container">
     <div class="headline-container">
-        <h1>ITERATE FAST</h1>
-        <h1>INNOVATE FAST</h1>
+        <h1>PRODUCT DESIGN</h1>
+        <h1>& DEVELOPMENT</h1>
         <h2>A hands on approach to product development</h2>
         <div class="button-line">
             <a class="headline-button light-button" href="/services">LEARN MORE</a>
