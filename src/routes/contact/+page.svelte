@@ -68,7 +68,7 @@
     <Banner title="Contact Us"/>
     {#if form?.success}
     <div class="form-message-banner">
-        <p class="form-message">{form?.message}</p>
+        <p class="form-message">Message Sent</p>
     </div>
     {/if}
     <div class="span-container">

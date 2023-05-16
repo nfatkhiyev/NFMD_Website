@@ -1,6 +1,11 @@
 /** @type {import('./$types').Actions} */
 
 import { SF_ACCESS_KEY, SF_URI } from '$env/static/private';
+import { SG_API_KEY, SG_MAIL_URI, SG_NEW_CONTACT_URI, SG_SUBSCRIBE_URI, QUOTE_EMAIL, WEBSITE_EMAIL} from '$env/static/private';
+
+import * as sgClient from '@sendgrid/mail';
+import { stat } from 'fs';
+
 export const actions = {
 	submitContact: async ({ request }) => {
         const data = await request.formData();
@@ -8,27 +13,46 @@ export const actions = {
         const email = data.get('contactFormEmail');
         const message = data.get('contactFormMessage');
         const newsletter = data.get('newsletter');
+        const isNewsletter = newsletter === 'on' ? true : false;
+
+        sgClient.setApiKey(SG_API_KEY);
 
         const params = {
-            accessKey: SF_ACCESS_KEY,
-            name: name,
-            subject: name + " - NFMD Contact Form Submission",
-            email: email,
-            $newsletter: newsletter,
-            message: message,
-            replyTo: "@",
-        };
-        
-        let status = await fetch(SF_URI,
-            {
-                method: 'POST',
-                headers: {
-                    "Content-Type": "application/json",
+            to: [
+                {
+                    email: QUOTE_EMAIL,
+                    name: 'NFMD Quotes'
                 },
-                body: JSON.stringify(params),
+            ],
+            cc: [
+                {
+                    email: email,
+                    name: name,
+                },
+            ],
+            from: {
+                email: WEBSITE_EMAIL,
+                name: 'NFMD Website'
+            },
+            subject: name + " - NFMD Contact Form Submission",
+            content: [
+                {
+                    type: 'text/html',
+                    value: '<p><strong>Name: </strong>' + name + '</p> <p><strong>Email: </strong>' + email + '</p> <p><strong>Messge: </strong>' + message + '</p> <p><strong>Subscribed to Newsletter? </strong>' + isNewsletter + '</p>',
+                },
+            ],
+
+        };
+
+        let status = await sgClient.send(params)
+            .then(() => {
+                return true;
             })
-                .then(resp => resp.json())
-                .then(data => { return data });
-        return status;
+            .catch(error => {
+                console.error(error);
+                return false;
+            });
+        
+        return {success: status};
     }
 };
