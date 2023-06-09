@@ -55,7 +55,7 @@
     }
 
     .pop-out-menu a, a:visited {
-        min-width: 4em;
+        min-width: 5em;
         text-align: center;
         font-family: 'Lato';
         font-weight: 400;
@@ -123,6 +123,7 @@
                 <a class:active={$page.route.id === "/"} href="/">Home</a>
                 <a class:active={$page.route.id === "/services"} href="/services">Services</a>
                 <a class:active={$page.route.id === "/about"} href="/about">About</a>
+                <a class:active={$page.route.id === "/newsletter"} href="/newsletter">Newsletter</a>
                 <a class:active={$page.route.id === "/contact"} href="/contact">Contact</a>
                 <a class="linkedin" target="_blank" href="https://www.linkedin.com/company/nf-maufacturing-design/"><img src="/linkedin.png" alt="linkedin icon"></a>
             {/if}
@@ -133,6 +134,7 @@
             <a class:active={$page.route.id === "/"} href="/" on:click="{() => clicked = !clicked}">Home</a>
             <a class:active={$page.route.id === "/services"} href="/services" on:click="{() => clicked = !clicked}">Services</a>
             <a class:active={$page.route.id === "/about"} href="/about" on:click="{() => clicked = !clicked}">About</a>
+            <a class:active={$page.route.id === "/newsletter"} href="/newsletter" on:click="{() => clicked = !clicked}">Newsletter</a>
             <a class:active={$page.route.id === "/contact"} href="/contact" on:click="{() => clicked = !clicked}">Contact</a>
             <a class="linkedin" target="_blank" href="https://www.linkedin.com/company/nf-maufacturing-design/" on:click="{() => clicked = !clicked}"><img src="/linkedin.png" alt="linkedin icon"></a>
         </div>

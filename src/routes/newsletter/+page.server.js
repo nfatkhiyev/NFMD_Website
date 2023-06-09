@@ -1,7 +1,8 @@
 import { json } from '@sveltejs/kit';
 
-async function getPosts() {
-    const imports = import.meta.glob('/src/posts/*.md', {eager: true});
+/** @type {import('./$types').PageServerLoad} */
+export async function load() {
+    const imports = import.meta.glob('/src/posts/*/*.md', {eager: true});
     let posts = [];
 
     for (const path in imports) {
@@ -17,10 +18,5 @@ async function getPosts() {
         new Date(second.date).getTime() - new Date(first.date).getTime()
     )
 
-    return posts;
-}
-
-export async function GET() {
-    const posts = await getPosts();
-    return json(posts);
+    return {posts};
 }

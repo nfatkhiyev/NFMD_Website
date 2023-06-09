@@ -13,6 +13,7 @@
         display: flex;
         flex-direction: column;
         min-height: 100%;
+        width: 100%;
     }
     .absolute-position {
         position: absolute;

@@ -2,6 +2,8 @@
 title: The Challenges of Defining a Project Scope in MedTech
 description: How challenges specific to the MedTech industry impact project planning.
 date: '2023-06-08'
+thumbnail: images/newsletter/newsletter_1_tn.jpeg
+thumbnailAlt: Project Scope Diagram
 categories:
     - project planning
     - project management
