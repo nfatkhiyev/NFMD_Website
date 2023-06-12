@@ -32,5 +32,9 @@
 </style>
 
 <div class="page-overview">
-    <h3>{content}</h3>
+    {#if content}
+        <h3>{content}</h3>
+    {:else}
+        <h3>Loading...</h3>
+    {/if}
 </div>

@@ -2,7 +2,7 @@ import { json } from '@sveltejs/kit';
 
 /** @type {import('./$types').PageServerLoad} */
 export async function load() {
-    const imports = import.meta.glob('/src/posts/*/*.md', {eager: true});
+    const imports = import.meta.glob('/src/posts/*.md', {eager: true});
     let posts = [];
 
     for (const path in imports) {

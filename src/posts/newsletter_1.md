@@ -1,6 +1,6 @@
 ---
 title: The Challenges of Defining a Project Scope in MedTech
-description: How challenges specific to the MedTech industry impact project planning.
+description: Poor project alignment and scope creep are the two top causes of project failure according to the Project Management Institute (PMI). Further, five of the top six reasons that projects fail, per a 2018 survey also conducted by PMI, are related to the project scope. 
 date: '2023-06-08'
 thumbnail: images/newsletter/newsletter_1_tn.jpeg
 thumbnailAlt: Project Scope Diagram
@@ -9,8 +9,7 @@ categories:
     - project management
 published: true
 ---
-# Challenges of Defining a Project Scope in MedTech
-Poor project alignment and scope creep are the two top causes of project failure according to the Project Management Institute (PMI). Further, 5 of the top 6 reasons that projects fail, per a 2018 survey also conducted by PMI, are related to the project scope. 
+Poor project alignment and scope creep are the two top causes of project failure according to the Project Management Institute (PMI). Further, five of the top six reasons that projects fail, per a 2018 survey also conducted by PMI, are related to the project scope. 
 
 In the realm of medical device development, defining the project scope plays a pivotal role in achieving successful outcomes. This becomes even more critical when working with hybrid teams comprised of internal engineering staff and Contract Development and Manufacturing Organizations (CDMOs). The project scope acts as a guiding framework, enforcing *Power Skills* that will help prevent project creep, budget losses and increase the chance of project success.
 

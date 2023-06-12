@@ -12,5 +12,7 @@
 
 <div class="page-container">
     <Banner title="Newsletter" />
-    <NewsletterCard postData={data.posts[0]} />
+    {#each data.posts as post}
+        <NewsletterCard postData={post} />
+    {/each}
 </div>

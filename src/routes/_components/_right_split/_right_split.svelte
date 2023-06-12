@@ -61,7 +61,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover; /* to fit the image inside the circle */
-  }
+    }
     p {
         font-family: 'Lato';
         font-weight: 300;
@@ -79,7 +79,11 @@
 <div class="rs-container">
     <div class="left">
         <h1>{title}</h1>
-        <p>{content}</p>
+        {#if content}
+            <p>{content}</p>
+        {:else}
+            <p>Loading...</p>
+        {/if}
     </div>
     <div class="right">
         <div class="circle">

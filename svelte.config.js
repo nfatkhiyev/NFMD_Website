@@ -1,12 +1,17 @@
 import adapter from '@sveltejs/adapter-vercel';
 import { mdsvex } from 'mdsvex';
-import mdsvexConfig from './mdsvex.config.js';
+
+/** @type {import('mdsvex').MdsvexOptions} */
+const mdsvexOptions = {
+	extensions: ['.md'],
+	smartypants: true,
+}
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	extensions: ['.svelte', ...mdsvexConfig.extensions],
+	extensions: ['.svelte', '.md'],
     preprocess: [
-        mdsvex(mdsvexConfig)
+        mdsvex(mdsvexOptions)
     ],
 	kit: {
 		// adapter-auto only supports some environments, see https://kit.svelte.dev/docs/adapter-auto for a list.
