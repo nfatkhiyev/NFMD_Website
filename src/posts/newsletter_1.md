@@ -9,6 +9,7 @@ categories:
     - project management
 published: true
 ---
+Team misalignment and scope creep are two of the top causes for project failure. When a team is misaligned, team members are not all paddling in the same direction. Instead, they are all working toward different objectives. This can be because the objective of the project is not clear, it does not follow the values of the organization or because individual and group tasks have not been clearly comunicated to all the parties involved in the project. Scope creep is unplanned change that occurs to the project scope as the project progresses. Every project will have one or both of these problems. One of the most effective things that you can do to prevent both is to start your project with a clear and detailed project scope.
 
 <img align="right" width="50%" src="/images/newsletter/project_failure_causes_2018.png">
 
