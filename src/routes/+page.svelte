@@ -62,32 +62,6 @@
         justify-content: center;
     }
 
-    :global(.headline-button) {
-        text-decoration: none;
-        font-size: 1.2vw;
-        font-weight: 400;
-        border: 1px solid;
-        box-shadow: 0 0 2px 2px lightgrey;
-        text-align: center;
-        padding: 0.8em;
-        padding-left: 1.3em;
-        padding-right: 1.3em;
-        border-radius: 40px;
-        margin: 1em;
-    }
-
-    :global(.light-button) {
-        background: #F8F8F8;
-        color: black;
-        border-color: lightgrey;
-    }
-
-    :global(.light-button:hover) {
-        background: #FF7F50;
-        color: white;
-        border-color: white;
-    }
-
     .emph-button {
         background: #FF7F50;
         color: white;

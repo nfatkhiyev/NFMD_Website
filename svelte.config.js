@@ -1,9 +1,11 @@
 import adapter from '@sveltejs/adapter-vercel';
 import { mdsvex } from 'mdsvex';
+import remarkFootnotes from 'remark-footnotes';
 
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
 	extensions: ['.md'],
+	remarkPlugins: [remarkFootnotes],
 	smartypants: true,
 }
 

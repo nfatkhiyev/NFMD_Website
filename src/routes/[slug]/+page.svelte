@@ -44,6 +44,9 @@
         font-family: 'Lato';
         text-decoration: none;
     }
+    :global(.prose :is(img)) {
+        margin: 0 2em;
+    }
 </style>
 
 <Banner title={data.meta.title} />
