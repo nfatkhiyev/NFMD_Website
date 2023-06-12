@@ -8,6 +8,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        margin-bottom: 4vh;
     }
     .card{
         width: 80%;
@@ -58,6 +59,18 @@
         font-size: 1.5vw;
         color: #666666
     }
+    .tags {
+        display: flex;
+        gap: 0.75em;
+        margin-bottom: 0.75em;
+    }
+    .tags > * {
+        border: solid 0.5px grey;
+        padding: 0.25em 1em;
+        border-radius: 1em;
+        background-color: white;
+        font-weight: 300;
+    }
     @media screen and (max-width: 1125px){
         a{
             flex-direction: column;
@@ -88,6 +101,11 @@
         </div>
         <div class="text-area">
             <h1>{postData.title}</h1>
+            <div class="tags">
+                {#each postData.categories as category}
+                    <span>&num;{category}</span>
+                {/each}
+            </div>
             <h3>{postDate.toLocaleDateString('en-us', {day: 'numeric', month: 'short', year: 'numeric'})}</h3>
             <p>{postData.description}</p>
         </div>

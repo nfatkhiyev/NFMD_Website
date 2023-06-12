@@ -62,7 +62,7 @@
         justify-content: center;
     }
 
-    .headline-button {
+    :global(.headline-button) {
         text-decoration: none;
         font-size: 1.2vw;
         font-weight: 400;
@@ -76,13 +76,13 @@
         margin: 1em;
     }
 
-    .light-button {
+    :global(.light-button) {
         background: #F8F8F8;
         color: black;
         border-color: lightgrey;
     }
 
-    .light-button:hover {
+    :global(.light-button:hover) {
         background: #FF7F50;
         color: white;
         border-color: white;

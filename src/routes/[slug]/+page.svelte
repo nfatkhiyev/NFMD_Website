@@ -35,6 +35,15 @@
         background: white;
         border: solid lightgrey;
 	}
+    .return-button {
+        display: flex;
+        justify-content: right;
+        padding: 2em 10%;
+    }
+    .return-button a, .return-button a:visited {
+        font-family: 'Lato';
+        text-decoration: none;
+    }
 </style>
 
 <Banner title={data.meta.title} />
@@ -43,7 +52,7 @@
 <article>
     <!-- Title -->
       <hgroup>
-          <p>Published on {postDate.toLocaleDateString('en-uk', {day: 'numeric', month: 'long', year: 'numeric'})}</p>
+          <p>{postDate.toLocaleDateString('en-uk', {day: 'numeric', month: 'long', year: 'numeric'})}</p>
       </hgroup>
   
     <!-- Tags -->
@@ -58,4 +67,7 @@
           <svelte:component this={data.content} />
       </div>
   </article>
+  </div>
+  <div class='return-button'>
+    <a class='headline-button light-button' href='/newsletter'>See All Newsletters</a>
   </div>
