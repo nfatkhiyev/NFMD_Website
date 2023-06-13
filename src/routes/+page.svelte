@@ -88,14 +88,10 @@
         h2 {
             font-size: 3vw;
         }
-        .headline-button {
-            font-size: 2vw;
-        }
     }
     @media screen and (max-width: 760px) {
         h1 { font-size: 5.6vw; }
         h2 {font-size: 4vw; }
-        .headline-button { font-size: 3vw;}
     }
 </style>
 <svelte:window bind:innerWidth/>
