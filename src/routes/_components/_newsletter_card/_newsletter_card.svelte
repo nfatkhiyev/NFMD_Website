@@ -53,6 +53,7 @@
         color: grey;
         font-weight: 300;
         margin: 0;
+        font-size: 1.5vw;
     }
     .text-area p {
         font-weight: 300;
@@ -77,19 +78,29 @@
             align-items: center;
         }
         .card {
-            width: 60%;
+            width: 80%;
         }
         .thumbnail{
             width: 40%;
         }
+        .tags {
+            justify-self: center;
+            margin-bottom: 3vw;
+        }
+        .tags > * {
+            font-size: 2.9vw;
+        }
         .text-area{
             width: 80%;
         }
-        .text-area p {
-            font-size: 2vw;
+        .text-area h1 {
+            font-size: 7vw;
         }
-        .span-container {
-            margin-bottom: 4vh;
+        .text-area h3 {
+            font-size: 3vw;
+        }
+        .text-area p {
+            font-size: 3vw;
         }
     }
 </style>

@@ -93,7 +93,7 @@
         }
     }
     @media screen and (max-width: 760px) {
-        h1 { font-size: 6vw; }
+        h1 { font-size: 5.6vw; }
         h2 {font-size: 4vw; }
         .headline-button { font-size: 3vw;}
     }
