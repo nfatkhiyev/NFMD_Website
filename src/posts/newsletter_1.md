@@ -1,7 +1,7 @@
 ---
 title: The Challenges of Defining a Project Scope in MedTech
 description: Poor project alignment and scope creep are the two top causes of project failure according to the Project Management Institute (PMI). Further, five of the top six reasons that projects fail, per a 2018 survey also conducted by PMI, are related to the project scope. 
-date: '2023-06-08'
+date: '2023-06-13'
 thumbnail: images/newsletter/newsletter_1_tn.jpeg
 thumbnailAlt: Project Scope Diagram
 categories:
