@@ -11,7 +11,7 @@
         flex: 1;
         flex-direction: column;
     }
-    img {
+    .image {
         flex: 1;
         max-width: 100%;
         position: relative;
@@ -106,8 +106,8 @@
         </div>
     </div>
     {#if innerWidth < 1300}
-        <img src="/images/EXAMPLE - 2.jpeg" alt="assorted catheter samples">
+        <img class="image" src="/images/EXAMPLE - 2.jpeg" alt="assorted catheter samples">
     {:else}
-        <img src="/images/_MG_2864.jpeg" alt="engineering work area">
+        <img class="image" src="/images/_MG_2864.jpeg" alt="engineering work area">
     {/if}
 </div>
