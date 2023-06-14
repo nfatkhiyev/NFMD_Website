@@ -10,11 +10,13 @@
         justify-content: center;
         align-items: center;
     }
-    p {
+    .copyright-container, .contact {
+        font-weight: 600;
         font-family: 'Lato';
-        color: lightgray;
+        font-size: 20px;
+        /* color: lightgray; */
         width: 33.33%;
-        padding:1em;
+        padding: 1em;
     }
     .contact {
         text-align: left;
@@ -22,10 +24,10 @@
     }
     @media screen and (max-width: 1125px){
         footer {
-            flex-direction: column;
+            flex-direction: row;
             justify-content: space-evenly;
         }
-        p {
+        .copyright-container, .contact {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -33,7 +35,7 @@
             height: 50%;
             width: 80%;
             margin: 0;
-            padding: 0;
+            padding: 15px;
         }
         .contact {
             text-align: center;
@@ -47,7 +49,7 @@
         Tel: (651) 368-6309 <br>
         E-mail: quote@nfmanufacturing.com
     </p>
-    <p>&copy; <em id="date">2023</em> &nbsp NF Manufacturing & Design, LLC</p>
+    <div class="copyright-container"><p>&copy; <em id="date">2023</em> &nbsp NF Manufacturing & Design, LLC</p></div>
     {#if innerWidth >= 1125}
     <p></p>
     {/if}

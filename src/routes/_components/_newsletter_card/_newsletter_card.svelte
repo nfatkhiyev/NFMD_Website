@@ -44,10 +44,13 @@
         display: flex;
         width: 60%;
         flex-direction: column;
-        justify-content: top;
+        justify-content: center;
         padding: 1em;
         align-items: left;
         font-family: 'Lato';
+    }
+    .text-area h1{
+        margin-bottom: 0.30em;
     }
     .text-area h3 {
         color: grey;
@@ -65,12 +68,11 @@
         gap: 0.75em;
         margin-bottom: 0.75em;
     }
-    .tags > * {
-        border: solid 0.5px grey;
-        padding: 0.25em 1em;
-        border-radius: 1em;
-        background-color: white;
-        font-weight: 300;
+    .tag-values {
+        font-weight: 600;
+        color: #ff7f50;
+        font-variant: small-caps;
+        
     }
     @media screen and (max-width: 1125px){
         a{
@@ -87,7 +89,7 @@
             justify-self: center;
             margin-bottom: 3vw;
         }
-        .tags > * {
+        .tag-values {
             font-size: 2.9vw;
         }
         .text-area{
@@ -111,15 +113,18 @@
             <img src={postData.thumbnail} alt={postData.thumbnailAlt}>
         </div>
         <div class="text-area">
+            <h3>{postDate.toLocaleDateString('en-us', {day: 'numeric', month: 'short', year: 'numeric'})}</h3>
             <h1>{postData.title}</h1>
             <div class="tags">
+                
                 {#each postData.categories as category}
-                    <span>&num;{category}</span>
+                <span class="tag-values">{category}</span>
                 {/each}
+                
             </div>
-            <h3>{postDate.toLocaleDateString('en-us', {day: 'numeric', month: 'short', year: 'numeric'})}</h3>
             <p>{postData.description}</p>
         </div>
     </a>
     </div>
 </div>
+<!-- &num; -->
