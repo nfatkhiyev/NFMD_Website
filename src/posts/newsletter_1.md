@@ -44,8 +44,6 @@ Resource management for medical device projects is often more complex than that 
 
 We have seen each of these major challenges keep project managers from producing a project scope to kick-off projects. This leads to confusion between members of a hybrid team and wastes time as issues that are usually addressed in the project scope are hashed out at length. In order to keep projects running smoothly and efficiently make sure that your team is provided with a clear project scope as early as possible. Keep in mind that each of the described challenges will rear its head however, letting them discourage your from producing a project scope will only be detrimental to your team.
 
-Part 2 of this article will be our next newsletter. In our next newsletter, we will shed some light on how teams can best keep each of these challenges in check.
-
 [^1]: [Pulse of the Profession 2018 (2018).](https://www.pmi.org/-/media/pmi/documents/public/pdf/learning/thought-leadership/pulse/pulse-of-the-profession-2018.pdf)
 [^2]: [Pulse of the Profession 2023 (2023).](https://www.pmi.org/-/media/pmi/documents/public/pdf/learning/thought-leadership/pmi-pulse-of-the-profession-2023-report.pdf?rev=427949fcdb684485a020cc72ea219f32&sc_lang_temp=en)
 
