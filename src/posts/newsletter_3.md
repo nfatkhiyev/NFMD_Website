@@ -15,7 +15,7 @@ In the dynamic world of medical device development, sometimes the most innovativ
 
 Recently, I've been working with a client to developing a tachycardia lead. One of our most persistent and high priority issues we encountered was a leak between two injection molded polyurethane components. This leak was a significant hurdle, as it caused the lead to fail critical dielectric strength testing. After some investigation, we realized that the gap between the components was too large for the adhesive to seal effectively. While modifying the mold was the long-term solution, budget constraints made it impractical in the immediate term.
 
-Modifying the mold was out of the question at the stage that we were at at the time. Because of this, an alternate solution was needed. While I can't share the intricate design details due to confidentiality, I created a simple animation to visualize the problem.
+Modifying the mold was out of the question at the stage that we were in at the time that we discovered the issue. Because of this, an alternate solution was needed. While I can't share the intricate design details due to confidentiality, I created a simple animation to visualize the problem.
 
 <p align="center">
 <br>
